@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reviews itemIdentifier="tetris_gb">
+  <review>
+    <reviewtitle>Controls</reviewtitle>
+    <reviewbody>1 = Start
+alt = A
+ctrl = B
+Arrow Keys = Direction </reviewbody>
+    <stars>5</stars>
+    <reviewer>zfatboy</reviewer>
+    <reviewdate>2024-03-28 07:36:59</reviewdate>
+    <createdate>2024-03-28 07:36:59</createdate>
+    <reviewer_itemname>@zfatboy</reviewer_itemname>
+  </review>
+  <review>
+    <reviewtitle>Tetris (Gameboy)</reviewtitle>
+    <reviewbody>Thanks, I enjoyed it!</reviewbody>
+    <stars>5</stars>
+    <reviewer>BackinDaDaY978</reviewer>
+    <reviewdate>2026-02-11 19:23:25</reviewdate>
+    <createdate>2026-02-11 19:23:25</createdate>
+    <reviewer_itemname>@backindaday978</reviewer_itemname>
+  </review>
+  <review>
+    <reviewtitle>Nostalgia</reviewtitle>
+    <reviewbody>Reminds me of Pizza Hut in 1995</reviewbody>
+    <stars>5</stars>
+    <reviewer>NobodyNue</reviewer>
+    <reviewdate>2026-10-21 07:13:53</reviewdate>
+    <createdate>2026-10-21 07:13:53</createdate>
+    <reviewer_itemname>@nobujirou</reviewer_itemname>
+  </review>
+  <review>
+    <reviewtitle>Nostaglia</reviewtitle>
+    <reviewbody>this reminds me of when I had my Gameboy color as a kid. tetris was my favorite game as a kid along with pokemon.</reviewbody>
+    <stars>5</stars>
+    <reviewer>LeroyJenkins2006</reviewer>
+    <reviewdate>2026-10-21 23:59:22</reviewdate>
+    <createdate>2026-10-21 23:57:36</createdate>
+    <reviewer_itemname>@leroyjenkinsthe3dsfan</reviewer_itemname>
+  </review>
+  <info>
+    <num_reviews>4</num_reviews>
+    <avg_rating>5.00</avg_rating>
+  </info>
+</reviews>

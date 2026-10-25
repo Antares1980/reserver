@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <identifier>tetris_gb</identifier>
+  <mediatype>software</mediatype>
+  <collection>miscconsoles</collection>
+  <creator>Nintendo</creator>
+  <date>1989-06-14</date>
+  <description>&lt;p style="margin-top:0px;margin-bottom:1rem;color:rgb(51,51,51);font-family:'-apple-system', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';font-size:15px;background-color:rgb(250,250,250);"&gt;This version of &lt;em&gt;Tetris&lt;/em&gt; is one of many conversions of the famous block-stacking game and was included with the Game Boy upon its release in several territories. The goal is to place pieces made up of four tiles in a ten-by-twenty well, organizing them into complete rows, which then disappear. As rows are cleared, the pace of the game increases, the background changes, and the game ends if the stack reaches the top of the well.&lt;/p&gt;&lt;p style="margin-top:0px;margin-bottom:0px;color:rgb(51,51,51);font-family:'-apple-system', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';font-size:15px;background-color:rgb(250,250,250);"&gt;The game is very similar to Nintendo's own NES version of the game, featuring the same "Type A" endless and "Type B" set-clear modes. The game also features a 2-player versus mode that can be played with two Game Boys, two copies of &lt;em&gt;Tetris&lt;/em&gt;, and a Game Boy link cable. Clearing lines in this mode will cause the other player's stack to rise, with the goal being to make the other player lose.&lt;/p&gt;</description>
+  <scanner>Internet Archive HTML5 Uploader 1.7.0</scanner>
+  <subject>Tetris</subject>
+  <subject>Gameboy</subject>
+  <title>Tetris (Gameboy)</title>
+  <uploader>jen.waughtal@gmail.com</uploader>
+  <publicdate>2024-02-01 05:30:13</publicdate>
+  <addeddate>2024-02-01 05:30:13</addeddate>
+  <curation>[curator]validator@archive.org[/curator][date]20240201053037[/date][comment]checked for malware[/comment]</curation>
+  <year>1989</year>
+  <emulator>gameboy</emulator>
+  <emulator_ext>gb</emulator_ext>
+  <collection>consolelivingroom</collection>
+  <collection>emulation</collection>
+</metadata>
