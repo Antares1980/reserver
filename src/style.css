@@ -1,0 +1,348 @@
+:root {
+  --bg-dark: #181a1b;
+  --shell-bg: #c8c4bc;
+  --shell-border: #8d8980;
+  --bezel-bg: #585660;
+  --accent-magenta: #8b1d52;
+  --accent-navy: #24215a;
+  --text-light: #f0f0e8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background: radial-gradient(circle at center, #282c34 0%, #101216 100%);
+  color: var(--text-light);
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.gb-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 780px;
+  width: 100%;
+}
+
+.gb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 680px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gb-header h1 {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gb-badge {
+  background: var(--accent-magenta);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.gb-toolbar {
+  display: flex;
+  gap: 8px;
+}
+
+.gb-tool-btn {
+  background: #2c313a;
+  color: #ffff88;
+  border: 1px solid #5c6370;
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gb-tool-btn:hover {
+  background: #3e4451;
+}
+
+.gb-console {
+  background: var(--shell-bg);
+  border: 4px solid var(--shell-border);
+  border-radius: 16px 16px 44px 16px;
+  padding: 20px 24px 24px;
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.65),
+    inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.gb-bezel {
+  background: var(--bezel-bg);
+  border-radius: 10px 10px 28px 10px;
+  padding: 12px 24px 14px;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.gb-bezel-top {
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid var(--accent-magenta);
+  border-bottom: 2px solid var(--accent-navy);
+  padding: 2px 0;
+}
+
+.gb-matrix-label {
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  color: #d8d8e0;
+  font-weight: bold;
+}
+
+.gb-screen-row,
+.gb-screen-\ row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.gb-battery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.gb-led {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff2a2a;
+  box-shadow: 0 0 8px #ff2a2a;
+}
+
+.gb-battery-text {
+  font-size: 0.55rem;
+  color: #d0d0d8;
+  letter-spacing: 0.5px;
+}
+
+.gb-lcd-frame {
+  background: #2b2a22;
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+#gb-canvas {
+  width: 480px;
+  height: 432px;
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@media (max-width: 600px) {
+  #gb-canvas {
+    width: 320px;
+    height: 288px;
+  }
+}
+
+.gb-brand {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--accent-navy);
+  font-weight: bold;
+  padding-top: 2px;
+}
+
+.gb-nintendo {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #d8d8e8;
+}
+
+.gb-gameboy {
+  font-size: 1rem;
+  font-style: italic;
+  color: #e6e6f2;
+}
+
+.gb-controls-pad {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 16px;
+}
+
+.gb-dpad {
+  display: grid;
+  grid-template-columns: repeat(3, 34px);
+  grid-template-rows: repeat(3, 34px);
+}
+
+.gb-pad-btn,
+.dpad-center {
+  background: #232327;
+  color: #9a9aa6;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.gb-pad-btn:active {
+  background: #3d3d46;
+  color: #fff;
+}
+
+.dpad-up {
+  grid-column: 2;
+  grid-row: 1;
+  border-radius: 4px 4px 0 0;
+}
+
+.dpad-left {
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 4px 0 0 4px;
+}
+
+.dpad-center {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.dpad-right {
+  grid-column: 3;
+  grid-row: 2;
+  border-radius: 0 4px 4px 0;
+}
+
+.dpad-down {
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: 0 0 4px 4px;
+}
+
+.gb-ab-group {
+  display: flex;
+  gap: 18px;
+  transform: rotate(-18deg);
+}
+
+.gb-ab-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.gb-round-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-magenta);
+  color: #f6d6e4;
+  border: 2px solid #5a1034;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 3px 0 #420a25;
+}
+
+.gb-round-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #420a25;
+}
+
+.gb-btn-label {
+  font-size: 0.65rem;
+  color: var(--accent-navy);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.gb-meta-buttons {
+  display: flex;
+  gap: 28px;
+}
+
+.gb-pill-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.gb-pill-btn {
+  width: 44px;
+  height: 12px;
+  border-radius: 8px;
+  background: #55545d;
+  border: 1px solid #35343b;
+  cursor: pointer;
+  transform: rotate(-18deg);
+}
+
+.gb-pill-btn:active {
+  background: #35343b;
+}
+
+.gb-key-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.78rem;
+  width: 100%;
+  max-width: 680px;
+}
+
+.legend-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+kbd {
+  background: #2e3440;
+  border: 1px solid #616e88;
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 0.72rem;
+  color: #ffff88;
+}

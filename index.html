@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TETRIS (Game Boy 1989)</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="gb-app">
+      <header class="gb-header">
+        <h1>TETRIS™ <span class="gb-badge">GAME BOY 1989</span></h1>
+        <div class="gb-toolbar">
+          <button id="btn-palette" type="button" class="gb-tool-btn" title="Toggle Color Palette">
+            PALETTE: SCREENSHOT
+          </button>
+          <button id="btn-mute" type="button" class="gb-tool-btn" title="Toggle Audio (M)">
+            AUDIO: ON
+          </button>
+        </div>
+      </header>
+
+      <section class="gb-console" aria-label="Game Boy Screen">
+        <div class="gb-bezel">
+          <div class="gb-bezel-top">
+            <span class="gb-matrix-label">DOT MATRIX WITH STEREO SOUND</span>
+          </div>
+          <div class="gb-screen- row">
+            <div class="gb-battery">
+              <span class="gb-led" id="battery-led"></span>
+              <span class="gb-battery-text">BATTERY</span>
+            </div>
+            <div class="gb-lcd-frame">
+              <canvas
+                id="gb-canvas"
+                width="160"
+                height="144"
+                aria-label="Tetris Game Boy 160x144 Display"
+              ></canvas>
+            </div>
+          </div>
+          <div class="gb-brand">
+            <span class="gb-nintendo">Nintendo</span>
+            <span class="gb-gameboy">GAME BOY<small>TM</small></span>
+          </div>
+        </div>
+
+        <div class="gb-controls-pad" aria-label="On-Screen Game Boy Controls">
+          <div class="gb-dpad">
+            <button type="button" class="gb-pad-btn dpad-up" data-btn="UP" aria-label="Up">▲</button>
+            <button type="button" class="gb-pad-btn dpad-left" data-btn="LEFT" aria-label="Left">◀</button>
+            <div class="dpad-center"></div>
+            <button type="button" class="gb-pad-btn dpad-right" data-btn="RIGHT" aria-label="Right">▶</button>
+            <button type="button" class="gb-pad-btn dpad-down" data-btn="DOWN" aria-label="Down">▼</button>
+          </div>
+
+          <div class="gb-ab-group">
+            <div class="gb-ab-wrap">
+              <button type="button" class="gb-round-btn btn-b" data-btn="B" aria-label="B Button (Counter-Clockwise)">B</button>
+              <span class="gb-btn-label">B (CTRL / Z)</span>
+            </div>
+            <div class="gb-ab-wrap">
+              <button type="button" class="gb-round-btn btn-a" data-btn="A" aria-label="A Button (Clockwise)">A</button>
+              <span class="gb-btn-label">A (ALT / X)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gb-meta-buttons">
+          <div class="gb-pill-wrap">
+            <button type="button" class="gb-pill-btn" data-btn="SELECT" aria-label="Select Button"></button>
+            <span class="gb-btn-label">SELECT (SHIFT)</span>
+          </div>
+          <div class="gb-pill-wrap">
+            <button type="button" class="gb-pill-btn" data-btn="START" aria-label="Start Button"></button>
+            <span class="gb-btn-label">START (1 / ENTER)</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="gb-key-legend">
+        <div class="legend-block">
+          <strong>tetris_gb Controls:</strong>
+          <span><kbd>1</kbd> Start</span>
+          <span><kbd>Alt</kbd> A (CW)</span>
+          <span><kbd>Ctrl</kbd> B (CCW)</span>
+          <span><kbd>Arrows</kbd> Move/Drop</span>
+        </div>
+        <div class="legend-block">
+          <strong>PC Controls:</strong>
+          <span><kbd>Enter</kbd> Start</span>
+          <span><kbd>X</kbd>/<kbd>↑</kbd> Rotate CW</span>
+          <span><kbd>Z</kbd> Rotate CCW</span>
+          <span><kbd>Shift</kbd> Next Preview</span>
+          <span><kbd>P</kbd> Pause</span>
+          <span><kbd>M</kbd> Mute</span>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
